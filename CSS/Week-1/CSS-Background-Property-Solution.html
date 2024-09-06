@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Background Property Solution</title>
+    <!--ASSIGNMENT FOR 9/05/24 5 CHANGES-->
     <style>
       /*Follow the instructions below to modify the background of the body element.*/
+       /* 1 MODIFIED BACKGROUND */
       body {
         /*1. Replace the word "value" to change background color to "aqua"*/
         background-color: aqua;
@@ -14,29 +16,55 @@
         /*3. Replace the words "property" and "value" to set the background repeat to "no-repeat"*/
         background-repeat: no-repeat;
         /*4. Replace the words "property" and "value" to set the background size to "cover"*/
-        background-size: cover;
+        background-size:cover;
         /*5. Replace the words "property" and "value" to set the background attachment to "fixed"*/
         background-attachment: fixed;
       }
 
       /*Replace the words "selector", "property" and "value" to add a rule that sets the background color of the <div> element to the value "rgba(255, 255, 255, .7)"*/
       div {
-        background-color: rgba(255, 255, 255, 0.7);
-      }
+        background-color: rgba(230, 189, 215, 0.7);
+        text-align: center;
+        
+}
 
       /*Leave this as is, it sets the padding around the <h1> and <p> elements to 10px, and increases the font size to 1.6 times the parent value*/
       h1,
       p {
-        padding: 10px;
-        font-size: 1.6em;
+        font-style: italic;
+        /* 3.CHANGE FONT STYLE */
+       font-size: 1.6em;
+        
       }
+
+      /* 2. MODIFIED BORDER PROPERTIES */
+
+      h1 {
+        border-style: solid;
+        border-radius: 10px;
+        font-family: sans-serif;
+        font-size: 40px;
+        text-align: center;
+        /* 5. CHANGES TO PADDING MARGIN */
+        margin: 10%;
+        padding: 10px;
+      }
+
+        .firstp {
+          border-radius: 10px;
+          border: 5px dashed black;
+          /* 4 H/W CHANGES */
+          width: fit-content;
+          display: inline-block;
+          margin-bottom: 1px;
+        }
     </style>
   </head>
   <body>
     <!--Follow instructions in CSS area-->
     <div>
-      <h1>Adding a background</h1>
-      <p>This is a practice to add a background.</p>
+      <h1>Pretty Words Go Here</h1>
+      <p class="firstp">This is a practice to add a background.</p>
       <p>
         Pivot cross-device native content seed money drone snackable content market share. Omnichannel vertical-specific wheelhouse trending verticals disruptive tech. Disruptive tech Gen Y pivot native content flat design call-to-action.
         Native content customer engagement target influencer mobile ready. Context holistic meme. Disruptive tech user-friendly pivot verticals inbound. Target influencer wheelhouse leverage. Social buttons B2B pivot market share.
