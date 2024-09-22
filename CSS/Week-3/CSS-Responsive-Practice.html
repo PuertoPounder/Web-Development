@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Responsive Grid Practice</title>
     <style>
+        /* Done 9/19/24 */
         /* Create a responsive grid layout that changes the number of columns based on the screen size. */
         body {
             display: flex;
@@ -18,16 +19,16 @@
 
         .grid-container {
             /* Add a display property with a value of "grid" */
-            property: value;
+            display: grid;
             /* Add a gap property with the value of "10px" */
-            property: value;
+            gap: 10px;
             width: 90%;
             margin: auto;
         }
 
         .grid-item {
-            background-color: #4CAF50;
-            color: white;
+            background-color: purple;
+            color: rgb(21, 222, 34);
             padding: 20px;
             text-align: center;
             font-size: 30px;
@@ -36,14 +37,14 @@
         @media (min-width: 600px) {
             .grid-container {
                 /* Add a grid-template-columns property with the value of "repeat(2, 1fr)" */
-                property: value;
+                 grid-template-columns: repeat(2, 1fr);
             }
         }
 
         @media (min-width: 900px) {
             .grid-container {
                 /* Add a grid-template-columns property with the value of "repeat(3, 1fr)" */
-                property: value;
+                grid-template-columns: repeat(3, 1fr);
             }
         }
     </style>
