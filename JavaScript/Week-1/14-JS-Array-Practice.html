@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>JS Array Practice</title>
-	</head>
-	<body>
-		<script>
-			//Create an array named colors with three values: "Red", "Blue", and "Green"
-			var name = create array;
 
-			//Write the second value in the array
-			document.write();
-		</script>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>JS Array Practice</title>
+	<!-- Done 10/1/24 -->
+</head>
+
+<body>
+	<h1>Array Practice Example</h1>
+	<button onclick="displayColors()">Display Colors</button><br><br>
+	<button onclick="changeColor()">Change Color</button>
+	<h1 id="color">Click Above to show the colors</h1>
+	<script>
+		//Create an array named colors with three values: "Red", "Blue", and "Green"
+		let colorArray = ["Red", "Blue", "Green"];
+
+		function displayColors() {
+			document.getElementById("color").innerHTML = colorArray.join(" ");
+		}
+
+		function changeColor() {
+			if (colorArray[1] == "Blue") {
+				let newColor = "Gray";
+				colorArray[1] = newColor;
+				displayColors();
+			} else {
+				let newColor = "Blue";
+				colorArray[1] = newColor;
+				displayColors();
+			}
+		}
+
+		function changeH1TextColorToRed() {
+    document.getElementsByTagName("color")[0].style.color = "red";
+}
+
+
+
+		//Write the second value in the array
+
+
+
+	</script>
+</body>
+
 </html>
