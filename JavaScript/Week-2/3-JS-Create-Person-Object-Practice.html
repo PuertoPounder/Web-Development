@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JS Create Person Object Practice</title>
+		<!-- Completed 10/8/24 -->
 	</head>
 	<body>
 		<h1>Person Object</h1>
@@ -16,8 +17,35 @@
             2. Add the following four   properties: firsName, lastName, age, eyeColor.
             3. Create a method called fullName that combines the first name and the last name
             */
+        let Person = {
+         //properties - what it is
+		 firstName: "Bob",
+		 middleName: "Ert",
+		 lastName: "Sanchez",
+		 age: 27,
+		 eyeColor: "brown",
+		 hobby: "programming",
 
+
+		 //attributes - what it does
+		 fullName: function(firstName, middleName, lastName){
+			return firstName + " " + middleName + " " + lastName;
+		 },
+
+		 getDetails: function(age, eyeColor, hobby){
+			return " is " + age + " years old, he has " + eyeColor + " eyes. His hobby is: " + hobby + ".";
+		 },
+
+
+
+
+		};
 			//Output each properties one at a time to the element with the ID results.
+			document.getElementById("results").innerHTML = Person.fullName(Person.firstName, Person.middleName, Person.lastName)
+			+Person.getDetails(Person.age, Person.eyeColor, Person.hobby);
+			
+			console.log(Person.fullName(Person.firstName, Person.lastName));
+			console.log(Person.getDetails(Person.age, Person.eyeColor, Person.hobby));
 		</script>
 	</body>
 </html>
