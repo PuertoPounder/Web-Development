@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JS Variable Demonstration Example</title>
+		<!-- complete 10-12-24 -->
+	
 	</head>
 	<body>
 		<p>
@@ -11,6 +13,10 @@
 			<b>z</b>
 			is:
 			<span id="results"></span>
+			<br>
+			The value of
+			<b>c</b>
+			<span id="resultsTwo"></span>
 		</p>
 		<script>
 			var x, y, z; //Create Variables
@@ -20,5 +26,14 @@
 			//Show the value of z
 			document.getElementById("results").innerHTML = z;
 		</script>
+
+		<script>
+        var a, b, c; //variables created
+		var a = 6; //assign x a value
+		var b = 3; //assign b a value
+		var  c = a + b; //stores the result of adding a + b
+		//show the value of c
+		document.getElementById("resultsTwo").innerHTML = c; 
+        </script>
 	</body>
 </html>

@@ -43,7 +43,7 @@
 				years
 			</li>
 		</ul>
-
+<!-- done 10-13-24 -->
 		<p id="greeting"></p>
 
 		<script>
@@ -55,16 +55,17 @@
 				age: function () {
 					return new Date().getFullYear() - this.year;
 				},
+			
 				/*
 				TRY IT:
 				Create a new method named greeting. Set the method to return a string that reads "This beautiful Volkswagen Beetle is 42 years old."
 				You can use this as a starting point.
 				*/
-				method: keyword () {
-					statement;
+				greeting: function () {
+					return "This vehicle is a" + this.make +" " + this.model + " and is " + this.age() + "years old.";
 				},
 			};
-
+				
 			document.getElementById("make").innerHTML = car.make;
 			document.getElementById("model").innerHTML = car.model;
 			document.getElementById("year").innerHTML = car.year;

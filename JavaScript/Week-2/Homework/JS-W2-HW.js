@@ -18,4 +18,4 @@ function calculateTip(){
     // TODO: Display the results
 
 // TODO: Add event listener to the HTML DOM button
-document.getElementById('calculate-button').addEventListener('click',calculateTip);
+document.getElementById('calculate-button').addEventListener('click',calculateTip)

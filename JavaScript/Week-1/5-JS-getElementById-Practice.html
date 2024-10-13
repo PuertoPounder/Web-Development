@@ -4,9 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JS getElementById Practice</title>
+		<!-- Done on 10/11/24 -->
 	</head>
 	<body>
 		<h1 id="hd1">My Heading</h1>
+		<h2 id="h21">H-Two Heading</h2>
+		<p id="pOne">Paragraph</p>
+		<p id="p2ne">Pargraph</p>
 		<script>
 			/* 
             Create a statement that selects the heading element and changes the text by doing the following:
@@ -17,6 +21,10 @@
             5. after an equal sign add the text string you would like to use to replace the text in the heading
             6. close with a semicolon
             */
+		document.getElementById("hd1").innerHTML="eff you my man";
+		document.getElementById("h21").innerHTML="Replace with this text.";
+		document.getElementById("pOne").innerHTML="Replace with this paragraph text.";
+		document.getElementById("p2ne").innerHTML="This is a pargraph.";
 		</script>
 	</body>
 </html>

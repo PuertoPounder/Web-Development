@@ -8,8 +8,8 @@
 	<body>
 		<script>
 			let person = {
-				firstName: "John",
-				lastName: "Doe",
+				firstName: "Andrew",
+				lastName: "Rodriquez",
 				age: 36,
 				fullName: function () {
 					return this.firstName + " " + this.lastName;
@@ -20,6 +20,22 @@
 			document.write(person.lastName + "<br>");
 			document.write(person.age + "<br>");
 			document.write(person.fullName() + "<br>");
+		
+
+        
+			let mySon = {
+				sonFirstName: "Tyr",
+				sonLastName: "Rodriquez",
+				sonAge: 12,
+				sonFullName: function () {
+					return this.sonFirstName + " " + this.sonLastName;
+				},
+			};
+
+			document.write(mySon.sonFirstName + "<br>");
+			document.write(mySon.sonLastName + "<br>");
+			document.write(mySon.sonAge + "<br>");
+			document.write(mySon.sonFullName() + "<br>");
 		</script>
 	</body>
 </html>

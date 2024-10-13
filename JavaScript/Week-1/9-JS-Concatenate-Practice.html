@@ -4,20 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JS Concatenate Practice</title>
+		<!-- Done 10/12/24 -->
 	</head>
 	<body>
+		<h1 id="fullNameH1"></h1>
 		<script>
 			//Create a variable for your first name
-			keyword variableName = your first name;
+			let firstName = "Andrew";
 
 			         //Create a variable for your last name
-			keyword variableName = your first name;
+			let lastName = "Rodriquez";
 
 			         //Create a variable to concatenate your first and last names
-			keyword variableName = combine your first and last name;
+			let fullName = "Andrew Rodriquez";
 
 			         //Write the results to the screen
-			object.method(variable);
+					 //document.write(fullName): would have been solution. Used getElementById below for funsies.
+			document.getElementById("fullNameH1").innerHTML="Your full name is:" + " " + fullName;
 		</script>
 	</body>
 </html>

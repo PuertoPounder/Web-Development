@@ -7,17 +7,37 @@
 	</head>
 	<body>
 		<script>
+
 			let x = 6;
 			let y = 2;
 			//Function is assigned to a variable
-			var sum = newSum(x, y);
+			var sum = sum(x, y);
 			//Variable used to receive results.
-			document.write(sum);
+			document.write("Equals:" + sum);
 
-			function newSum(a, b) {
+			function sum(x, y) {
 				//Return keyword sends the results out of the function.
+				return x + y;
+			}
+            
+		    </script>
+
+            <script>
+
+			let a = 6;
+			let b = 8;
+
+			var sumTwo = sumTwo(a, b);
+
+			document.write ("Equals:" + sumTwo);
+
+			function sumTwo(a, b) {
 				return a + b;
 			}
-		</script>
+
+
+
+			
+		    </script>
 	</body>
 </html>

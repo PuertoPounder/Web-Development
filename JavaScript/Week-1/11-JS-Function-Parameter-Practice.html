@@ -4,16 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JS Function Parameter Practice</title>
+		<!--Done 10/12/24 -->
 	</head>
 	<body>
 		<!--Add the string 'New Text' in the parentheses of the function name-->
-		<button onclick="newMessage()">Show Message</button>
+		<button onclick="newMessage('New Text')">Show Message</button>
+		<br><br>
+		<button onclick="newMessageTwo('Other Text')">Show Dis Message</button>
 
 		<script>
 			//Add the parameter txt to the function name
-			function newMessage() {
+			function newMessage(txt) {
 				//Set the alert statement to use the txt parameter
-				alert(parameter);
+				alert(txt);
+			}
+			
+			function newMessageTwo(txtTwo) {
+				alert(txtTwo);
 			}
 		</script>
 	</body>

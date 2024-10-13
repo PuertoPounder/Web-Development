@@ -4,25 +4,49 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>JS Array Methods Practice</title>
+		<h1>Array Method Practice</h1>
+		<!-- Done 10/13/24 -->
 	</head>
 	<body>
 		<script>
-			let clr = ["Red", "Blue", "Green"];
+			let clr = ["Red", "Blue", "Green"];  //<----This is an array clr with three elements.
 			//Modify the document write statement below to do the following:
 
 			// 1. Write the length of the array to the screen
-
+			document.write(clr.length, "<br><br>");
+			 //length displays the number of elements in the array.
+			
 			// 2. Sort the array
+			document.write(clr.sort(), "<br><br>"); //sort arranges the elements of the array in ascending order default behavior for strings is sorting alphabetically based on unicoe values
+			
 
 			// 3. Push the item "Orange" to the array
+			document.write(clr.push("Orange"), "<br><br>"); //adds one or more elements to the end of an array. Returns the new lenth of the array.
+			
+			document.write("After push: ", clr, "<br><br>");
+			
 
 			// 4. Pop the last element from the array
+			document.write(clr.pop(), "<br><br>"); //removes the last element from the array
+
+			document.write("After pop: ", clr, "<br><br>");
 
 			// 5. Remove the first item from the array using shift
+			document.write(clr.shift(), "<br><br>"); //shift removes the first element from the array. returns the removed element.
+			
+			document.write("After shift: ", clr, "<br><br>");
 
 			// 6. Use unshift to add "Orange" and "Purple" to the array
+			document.write(clr.unshift("Orange", "Purple",),"<br><br>"); //unshift adds one or more elements to the beginning of the array. Returns the new length of the array.
 
-			// 7. Use splice to remove blue (index 1) and add "Orange" and "Purple"
+			document.write("After unshift: ", clr, "<br><br>");
+
+			// 7. Use splice to remove blue (index 1) and add "Orange" and "Purple" //splice returns an array of removed elements.
+			document.write(clr.splice(1, 1, "Orange", "Purple"), "<br><br>" );
+			
+			document.write("After splice: ", clr, "<br><br>"); 
+
+			
 		</script>
 	</body>
 </html>
