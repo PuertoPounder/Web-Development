@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<style>
-			p#greeting {
+			#greeting {
 				font-weight: bold;
 				font-size: 1.75em;
 			}
@@ -42,9 +42,30 @@
 				<span id="age"></span>
 				years
 			</li>
+			<li>
+				<b>Make:</b>
+				<span id="makeTwo""></span>
+			</li>
+			<li>
+				<b>Model:</b>
+				<span id="modelTwo"></span>
+			</li>
+			<li>
+				<b>Year:</b>
+				<span id="yearTwo"></span>
+			</li>
+			<li>
+				<b>Color:</b>
+				<span id="colorTwo"></span>
+			</li>
+			<li>
+				<b>Age:</b>
+				<span id="ageTwo"></span>
+		    </li>
 		</ul>
 <!-- done 10-13-24 -->
 		<p id="greeting"></p>
+		<p id="greetingTwo"></p>
 
 		<script>
 			var car = {
@@ -55,7 +76,8 @@
 				age: function () {
 					return new Date().getFullYear() - this.year;
 				},
-			
+
+                
 				/*
 				TRY IT:
 				Create a new method named greeting. Set the method to return a string that reads "This beautiful Volkswagen Beetle is 42 years old."
@@ -65,6 +87,22 @@
 					return "This vehicle is a" + this.make +" " + this.model + " and is " + this.age() + "years old.";
 				},
 			};
+
+			var truck = {
+				makeTwo: "Ford",
+				modelTwo: "Powerstroke",
+				yearTwo: 2001,
+				colorTwo: "Black",
+				ageTwo: function() {
+					return new Date().getFullYear() - this.year;
+				},
+				
+				greetingTwo: function () {
+					return "This truck is a " + this.makeTwo + " " + this.modelTwo + " and is " + this.ageTwo() + " years old.";
+				},
+			};
+
+			
 				
 			document.getElementById("make").innerHTML = car.make;
 			document.getElementById("model").innerHTML = car.model;
@@ -72,6 +110,12 @@
 			document.getElementById("color").innerHTML = car.color;
 			document.getElementById("age").innerHTML = car.age();
 			document.getElementById("greeting").innerHTML = car.greeting();
+
+			document.getElementById("makeTwo").innerHTML = truck.makeTwo;
+			document.getElementById("modelTwo").innerHTML = truck.modelTwo;
+			document.getElementById("yearTwo").innerHTML = truck.yearTwo;
+			document.getElementById("ageTwo").innerHTML = truck.ageTwo();
+			document.getElementById("greetingTwo").innerHTML = truck.greetingTwo(); 
 		</script>
 	</body>
 </html>
