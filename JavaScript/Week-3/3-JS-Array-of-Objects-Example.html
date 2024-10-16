@@ -21,18 +21,19 @@
             Try adding another object
             ***********************/
 			var contacts = [
-				{ name: "John Doe", email: "jdoe@email.com" },
+				{ name: "John Doe", email: "jdoe@email.com", phone: "801-655-3445" },
 
-				{ name: "Jane Doe", email: "janedoe@email.com" },
+				{ name: "Jane Doe", email: "janedoe@email.com", phone: "801-666-5555" },
 
-				{ name: "Paul Smith", email: "psmith@email.com" },
+				{ name: "Paul Smith", email: "psmith@email.com", phone: "801-222-7786" },
 			];
 
 			/***************************
             CREATE FUNCTION FOR RESULTS
             ***************************/
-			function person(p) {
-				return "Name: " + contacts[p].name + "<br> Email: " + contacts[p].email;
+			function getPersonInformation(p) {
+				return "Name: " + contacts[p].name + "<br> Email: " 
+				+ contacts[p].email +" <br> Phone: " + contacts[p].phone;
 			}
 
 			/********************** 
