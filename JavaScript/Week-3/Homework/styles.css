@@ -1,28 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+    background-color: blanchedalmond;
     margin: 0;
     padding: 20px;
+    background: linear-gradient(to right, #9e9e97, #473651);
+    margin: 0;
+    padding: 20px;
+    scroll-behavior: smooth;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #151515;
+    text-shadow: 2px 2px #f5f5f5;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #7b757b;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: black;
+    position: relative;
 }
 
 input[type="text"],
@@ -36,7 +45,9 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    
 }
+
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -44,7 +55,7 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-    background-color: #28a745;
+    background-color: #403e3e;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -52,8 +63,20 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+
 input[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #604e5b;
+    background: linear-gradient(45deg, #524a52, #8039a0);
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    /* Add shadow and transition */
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 input[type="text"]:focus,
@@ -70,11 +93,11 @@ textarea:focus {
 }
 
 input:required {
-    border-left: 3px solid #dc3545;
+    border-left: 3px solid #3a0443;
 }
 
 input:invalid {
-    border-color: #dc3545;
+    border-color: #501473;
 }
 
 label::after {
@@ -84,7 +107,7 @@ label::after {
 input[type="radio"]:checked + label::before,
 input[type="checkbox"]:checked + label::before {
     content: "✔";
-    color: green;
+    color: rgb(72, 3, 77);
     font-weight: bold;
     margin-right: 5px;
 }
