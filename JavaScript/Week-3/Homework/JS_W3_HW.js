@@ -1,11 +1,42 @@
-// TODO: Make sure the JavaScript file is linked in the HTML head with defer to ensure it loads after the HTML. 
+function validateEMail(email){
+    const regularExpression = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return regularExpression.test(String(email).toLowerCase());
+}
 
-// TODO: Add an event listener is added to the form to handle the submit event. 
+function submitEvent(event){
 
-// TODO: The submit event is prevented from its default action using event.preventDefault(). 
+event.preventDefault();
 
-// TODO: Inputs are validated to ensure they are not empty and the email is in a correct format. 
+const name = document.getElementById("name").value.trim();
+const email = document.getElementById("email").value.trim();
+const age = document.getElementById("age").value.trim();
+const gender = document.querySelector('input[name="gender"]:checked');
+const interests = Array.from(document.querySelectorAll('input[name="interests"]:checked')).map(interest => interest.value);
+const country = document.getElementById("country").value;
+const comments = document.getElementById("comments").value.trim();
 
-// TODO: A success message is displayed in the form-response div if the validation passes. 
+if(!name || !email || !age || !gender) {
+    alert("Fill yo dam form out.");
+    return;
+}
 
-// TODO: The form fields are optionally cleared using form.reset(). 
+if(!validateEMail(email)){
+    alert("YO, you email is messed up my guy");
+    return;
+
+}
+
+alert("Thank you for submitting kind sir.");
+
+this.reset()
+
+}
+
+function formValidation(){
+    const form = document.getElementById("survey-form");
+
+    form.addEventListener("submit", submitEvent);
+}
+
+document.addEventListener("DOMContentLoaded", formValidation);
+
