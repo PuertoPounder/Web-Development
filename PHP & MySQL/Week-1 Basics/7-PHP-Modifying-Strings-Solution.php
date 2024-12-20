@@ -46,6 +46,7 @@
         *****************************************************/
         echo str_replace('this', 'the', 'Replacing a word in this string!'); echo "<br>";
         echo str_replace('bitch', 'lover', 'Replace the bitch.'); echo '<br>';
+        echo str_replace('destroyer', 'builder', 'I fear am become death destroyer of worlds.');
         ?>
 
 </body>
