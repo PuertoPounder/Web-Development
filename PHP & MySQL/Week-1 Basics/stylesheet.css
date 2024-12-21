@@ -1,0 +1,69 @@
+
+/* -------------------------------------------
+   General Page Setup
+------------------------------------------- */
+body {
+    background-color: #1b1f38; /* Dark navy background */
+    color: #ffffff;           /* White text */
+    font-family: "Open Sans", sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------
+   Card and Container
+------------------------------------------- */
+.container {
+    max-width: 800px;
+}
+
+.custom-card {
+    background-color: #282e52; /* Slightly lighter navy */
+    border: 1px solid #3e4673; 
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* -------------------------------------------
+   Typography
+------------------------------------------- */
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #7fffd4; /* Aquamarine heading */
+    margin-bottom: 1rem;
+}
+
+.custom-code {
+    background-color: #1b1f38; /* Matches body background */
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    color: #f8f9fa;
+    font-family: Consolas, Courier, monospace;
+    overflow-x: auto;  /* Scroll horizontally if code is too wide */
+}
+
+/* -------------------------------------------
+   Additional Classes / Utilities
+------------------------------------------- */
+/* Make your code or text inside .custom-code 
+   stand out with "neon" effect highlights */
+.custom-code strong {
+    color: #ff9a3e; /* Vibrant orange for emphasis */
+}
+
+/* Adding a subtle hover effect on links */
+a:hover,
+a:focus {
+    color: #7fffd4;
+    text-decoration: underline;
+}
+
+/* Optional: Change Bootstrap's .card-body spacing 
+   if you want more or less space */
+.card-body {
+    padding: 2rem;
+}

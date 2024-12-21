@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Using PHP Assignment Operators Exercise</title>
 </head>
-
+<!--12/20/24 done  -->
 <body>
     <?php
         /**
@@ -15,7 +15,8 @@
          **/ 
             $a = 133;
             $b = 666.6;
-        
+            $c = 23;
+            $d = 45;
         /**
          * 1. Create an echo statement to show the results
          *    of assigning the value of the second variable 
@@ -66,7 +67,10 @@
          * 2. Create an echo statement that sends a line break 
          *    to the screen.
          **/
-        
+            echo $a /= $b; 
+            echo "<br>";
+            echo $c += $d;
+            echo "<br>";
         /**
          * 1. Create an echo statement to show the
          *    modulus (remainder) between the second 
